@@ -1,9 +1,22 @@
 #include <iostream>
-
+#include <string>
 using namespace std;
 
 int main() {
-    cout << "SISTEMA DE GESTION ACADEMICA" << endl;
-    cout << "Bienvenidos al proyecto" << endl;
+    string nombre;
+    int codigo;
+
+    cout << "REGISTRO DE ESTUDIANTES" << endl;
+    cout << "Ingrese codigo: ";
+    cin >> codigo;
+
+    cin.ignore();
+    cout << "Ingrese nombre: ";
+    getline(cin, nombre);
+
+    cout << "\nDATOS REGISTRADOS" << endl;
+    cout << "Codigo: " << codigo << endl;
+    cout << "Nombre: " << nombre << endl;
+
     return 0;
 }
